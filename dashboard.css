@@ -1,0 +1,224 @@
+.btn-logout {
+    margin-left: 20%;
+    border-radius: 20px;
+    padding: 7px 20px;
+    background-image: linear-gradient(to right, #347fff, #8fdaff);
+    outline: none;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.btn-logout:hover {
+    background-image: linear-gradient(to right, #8fdaff, #347fff);
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 1113px) and (max-width: 1253px) {
+    .btn-logout {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (min-width: 1045px) and (max-width: 1112px) {
+    .btn-logout {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width: 105px) and (max-width: 1045px) {
+    .btn-logout {
+        margin-left: 0;
+    }
+}
+
+
+.dashboard-main {
+    display: flex;
+}
+
+.dashboard-left,
+.dashboard-right {
+    margin-top: 3%;
+    font-weight: bold;
+    background-color: white;
+    width: 45%;
+    margin-left: 3%;
+    border-radius: 10px;
+    /* display: flex; */
+}
+
+.container-1 {
+    display: flex;
+}
+
+.card3 {
+    width: 50%;
+    display: flex;
+}
+
+.row-2 {
+    margin-left: 25%;
+}
+
+.row-1 {
+    margin-left: 50%;
+}
+
+@media screen and (min-width: 733px) and (max-width: 1158px) {
+    .dashboard-main {
+        display: block;
+    }
+
+    .dashboard-left,
+    .dashboard-right {
+        width: 85%;
+        height: 30%;
+        margin-left: 10%;
+    }
+
+    .row-1,
+    .row-2 {
+        margin-left: 60%;
+        margin-top: 20%;
+    }
+
+}
+
+@media screen and (min-width: 733px) and (max-width: 893px) {
+    .dashboard-main {
+        display: block;
+    }
+
+    .dashboard-left,
+    .dashboard-right {
+        width: 85%;
+        height: 30%;
+        margin-left: 10%;
+    }
+
+    .row-1,
+    .row-2 {
+        margin-left: 60%;
+    }
+
+}
+
+@media screen and (min-width: 517px) and (max-width: 733px) {
+
+    .row-1,
+    .row-2 {
+        margin-left: 30%;
+    }
+
+    .dashboard-main {
+        display: block;
+    }
+
+    .dashboard-left,
+    .dashboard-right {
+        width: 85%;
+        height: 30%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (min-width: 107px) and (max-width: 517px) {
+
+    .row-1,
+    .row-2 {
+        margin-left: 15%;
+    }
+
+    .dashboard-main {
+        display: block;
+    }
+
+    .dashboard-left,
+    .dashboard-right {
+        width: 95%;
+        height: 30%;
+        margin-left: 5%;
+    }
+}
+
+/* profit */
+.profit-main {
+    display: flex;
+}
+
+.profit-left,
+.profit-middle,
+.profit-right {
+    margin-top: 3%;
+    font-weight: bold;
+    background-color: white;
+    width: 30%;
+    margin-left: 3%;
+    border-radius: 10px;
+    /* display: flex; */
+}
+
+.row-3 {
+    margin-left: 13%;
+    margin-top: 13%;
+}
+
+/* footer */
+.footer {
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (min-width: 733px) and (max-width: 1158px) {
+    .profit-main {
+        display: block;
+    }
+    .order{
+        text-align: center;
+    }
+
+    .profit-left,
+    .profit-middle,
+    .profit-right {
+        width: 75%;
+        margin-left: 15%;
+    }
+
+    .row-3 {
+        margin-left: 35%;
+        margin-top: 80%;
+    }
+}
+
+@media screen and (min-width: 333px) and (max-width: 733px) {
+    .profit-main {
+        display: block;
+    }
+
+    .profit-left,
+    .profit-middle,
+    .profit-right {
+        width: 75%;
+        margin-left: 15%;
+    }
+ .order{
+    text-align: center;
+ }
+    .row-3 {
+        margin-left: 35%;
+        margin-top: 40%;
+    }
+}
+
+.row-3 {
+    margin-left: 35%;
+    margin-top: 10%;
+}
+.order{
+    margin-left: 5%;
+    margin-top: 5%;
+}

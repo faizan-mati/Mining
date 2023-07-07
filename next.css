@@ -1,0 +1,274 @@
+
+.body-next {
+  background-color: rgb(235, 230, 230);
+}
+
+#navbarNav {
+  margin-left: 15%;
+}
+
+
+/* marquee */
+.marquee {
+  color: red;
+  margin-top: 1%;
+  font-weight: bold;
+  background-color: white;
+  width: 98%;
+  margin-left: 1%;
+  border-radius: 5px;
+}
+
+
+/* welcame card */
+.wellcame-card {
+  margin-top: 1%;
+  border-radius: 5px;
+  margin-left: 1%;
+  width: 98%;
+  background-color: white;
+  display: flex;
+}
+
+.btn-wellcame {
+  /* margin-left: 20%; */
+  border-radius: 20px;
+  padding: 7px 20px;
+  background-image: linear-gradient(to right, #347fff, #8fdaff);
+  outline: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.btn-wellcame:hover {
+  background-image: linear-gradient(to right, #8fdaff, #347fff);
+  color: rgb(0, 0, 0);
+}
+
+.wellcame-img {
+  margin: 2% 4%;
+}
+
+.wellcame-text {
+  margin-left: 1%;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+@media screen and (min-width: 200px) and (max-width: 1275px) {
+  .wellcame-card {
+    display: inline-block;
+    /* text-align: center; */
+  }
+
+  .btn-wellcame {
+    margin-left: 40%;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 689px) {
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* start card */
+.line {
+  border-color: blue;
+  border-width: 2px;
+  width: 15%;
+  height: 5px;
+}
+
+.start {
+  margin-top: 3%;
+  font-weight: bold;
+  background-color: white;
+  width: 98%;
+  margin-left: 1%;
+  border-radius: 5px;
+  /* height: 120%; */
+}
+
+.card-text {
+  padding-top: 3%;
+}
+
+.card:hover {
+  border: 1px solid red;
+}
+
+hr {
+  border-color: blue;
+  border-width: 2px;
+  width: 5%;
+  height: 5px;
+}
+.logo-img {
+  margin-left: 40%;
+}
+
+@media screen and (min-width: 200px) and (max-width: 720px) {
+  .logo-img {
+    margin-left: 5%;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 689px) {
+  .card {
+    width: 100%;
+  }
+
+}
+/* pakages */
+.pakages {
+  margin-top: 3%;
+  font-weight: bold;
+  background-color: white;
+  width: 92%;
+  margin-left: 4%;
+  border-radius: 5px;
+}
+
+.card2:hover {
+  border: 1px solid red;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card2 {
+  border: 1px solid rgb(172, 160, 160);
+  margin: 2%;
+  margin-left: 2%;
+  display: flex;
+  line-height: 1.5;
+  height: 122%;
+  width: 96%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.btn-now {
+  /* margin-right: 120%; */
+  border-radius: 20px;
+  padding: 7px 20px;
+  background-image: linear-gradient(to right, #347fff, #8fdaff);
+  outline: none;
+  color: #ffffff;
+  font-weight: bold;
+  width: 150%;
+  margin-top: 73px;
+  margin-left: -46px;
+  margin-right: 47px;
+
+}
+
+.btn-now:hover {
+  background-image: linear-gradient(to right, #8fdaff, #347fff);
+  color: rgb(0, 0, 0);
+}
+.margin {
+  margin-left: 20px;
+}
+
+.pakages-btn {
+  display: inline;
+}
+
+.btn-pakages {
+  margin-left: 69%;
+  border-radius: 20px;
+  padding: 7px 20px;
+  background-image: linear-gradient(to right, #347fff, #8fdaff);
+  outline: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.btn-pakages:hover {
+  background-image: linear-gradient(to right, #8fdaff, #347fff);
+  color: rgb(0, 0, 0);
+}
+.pkg-img{
+  width: 25%;
+}
+@media screen and (min-width: 691px) and (max-width: 991px) {
+  .btn-now{
+    margin-top: 120px;
+    text-align: center;
+  }
+  .pkg-img{
+    width: 35%;
+  }
+
+}
+
+@media screen and (min-width: 933px) and (max-width: 1320px) {
+  .btn-pakages {
+    margin-left: 59%;
+  }
+}
+
+@media screen and (min-width: 691px) and (max-width: 932px) {
+  .btn-pakages {
+    margin-left: 49%;
+  }
+
+}
+
+@media screen and (min-width: 440px) and (max-width: 691px) {
+  .btn-pakages {
+    margin-left: 25%;
+  }
+  .card2{
+    display: block;
+  }
+  .pkg-img{
+    width: 100%;
+    height: 230px;
+  }
+  .btn-now {
+    margin: 0 0;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+   border-radius: 10px;
+    /* margin-left: 170px; */
+  }
+
+}
+
+@media screen and (min-width: 220px) and (max-width: 440px) {
+  .btn-pakages {
+    margin-left: 0%;
+  }
+  .card2{
+    display: block;
+  }
+  .pkg-img{
+    width: 100%;
+    height: 230px;
+   }
+  .btn-now {
+    margin: 0 0;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+   border-radius: 10px;
+    /* margin-left: 170px; */
+  }
+}
+
+/* footer */
+.footer {
+  background: #111;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+}

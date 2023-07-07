@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mining</title>
+  <link rel="shortcut icon" type="image/jpg" href="./images/logo-3.png" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/js/bootstrap.min.js">
+</head>
+
+<body class="body">
+  <section id="navbar">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="logo">
+          <a href="#about"><img src="./images/logo-3.png" class="logo-img" height="30%" width="30%" alt="Logo"></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#work">How it works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#slider">Available</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#question">FAQ</a>
+            </li>
+          </ul>
+          <button onclick="document.getElementById('id01').style.display='block'" class="btn-signin">Login</button>
+          <button onclick="document.getElementById('id02').style.display='block'" class="btn-register">Register</button>
+        </div>
+      </nav>
+    </header>
+  </section>
+
+  <!-- Login -->
+
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate  " action="./next.html" method="post" id="login">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <h1>Login</h1>
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <center>
+            <button type="submit" class="btn-login">Login </button>
+        </center>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+          class="btn-cancel">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+
+
+  <!-- Registration -->
+
+  <div id="id02" class="modal">
+
+    <form class="modal-content animate" action="./next.html" method="post" id="login">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <h1>Register</h1>
+      </div>
+      <div class="container">
+        <h5 style="color: blue;">Please fill in this form to create an account.</h5>
+        <hr>
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>email</b></label>
+        <input type="text" placeholder="Enter Email" name="psw" required>
+        <label>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <label>
+
+            <label for="psw"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw" required>
+            <label>
+
+              <input type="checkbox" checked="checked" name="remember"> I am agree with terms and conditions
+            </label>
+            <center>
+              <button type="submit" class="btn-login">Register</button>
+            </center>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'"
+          class="btn-cancel">Cancel</button>
+        <span class="psw">Already have an account? <a href="#"> Login</a></span>
+      </div>
+    </form>
+  </div>
+
+
+  <!-- about -->
+
+  <section id="about" data-aos="fade-up">
+    <div class="text">
+      <p style="color:rgb(80, 20, 220);  line-height: 0.1; font-size: 25px; font-weight: 600;">Most Trusted</p>
+      <h1 style="color:rgb(0, 0, 0);font-size: 40px; font-weight: bold;">CRYPTO MINING <br>
+        PLATFORM</h1>
+      <p data-aos="fade-up" style="color:rgb(95, 93, 100);">From 2%-6% Daily income in Bitcoin, Ethereum, Ripple,
+        Litecoin
+        <br> other cryptocurrencies. Start mining right now!
+      </p>
+      <button onclick="document.getElementById('id02').style.display='block'" class="btn-start">Get Started</button>
+    </div>
+    <div>
+      <img src="./images/bitcoin.png" class="bitcoin">
+    </div>
+  </section>
+
+
+  <!-- Card -->
+
+  <section id="card" data-aos="fade-up">
+    <center>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="./images//user count.png" class="card-img-top"
+                style="height: 70%; width: 66%; margin-left: 11%;" alt="Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Users count</h5>
+                <p class="card-text">922570</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="./images/Paid_to_users.png" class="card-img-top"
+                style="height: 70%; width: 70%; margin-left: 11%;" alt="Image 2">
+              <div class="card-body">
+                <h5 class="card-title">Paid to users</h5>
+                <p class="card-text">$ 611221.17</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="./images//Days worked.png" class="card-img-top2"
+                style="height: 70%; width: 70%; margin-left: 11%;" alt="Image 3">
+              <div class="card-body">
+                <h5 class="card-title">Days worked</h5>
+                <p class="card-text">146</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="./images/User deposits.png" class="card-img-top"
+                style="height: 70%; width: 70%; margin-left: 11%;" alt="Image 4">
+              <div class="card-body">
+                <h5 class="card-title">User deposits</h5>
+                <p class="card-text">$ 4031367.85</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+  </section>
+
+  <!-- How it works -->
+  <hr>
+  <section id="work" style="margin-top: 5%;" data-aos="fade-up">
+    <center>
+      <h1>How it works</h1>
+      <p class="para">Discover the various features that make our platform
+        the best place to start trading</p>
+
+      <div class="register">
+        <img src="./images//register.png" height="150px">
+        <h3 lass="card-title">Register</h3>
+        <p class="card-description">Complete a simple registration form, which will take a few seconds, after which you
+          will be users of all the features of the project.</p>
+      </div>
+
+      <div class="register">
+        <img src="./images/Beginning.png">
+        <h3 class="card-title">Beginning of work</h3>
+        <p class="card-description">After reaching the minimum amount for withdrawal, you can issue a withdrawal by
+          filling out a short form.</p>
+      </div>
+
+      <div class="register">
+        <img src="./images//Profit withdrawal.png" style="height: 180px;">
+        <h3 class="card-title">Profit withdrawal</h3>
+        <p class="card-description">After registration, go to the balance tab, replenish your account in a way
+          convenient for you, and start mining in a couple of seconds.</p>
+      </div>
+    </center>
+
+  </section>
+
+
+  <!-- slider -->
+  <hr>
+  <section id="slider" data-aos="fade-up">
+    <center>
+      <h1 style="color:rgb(0, 0, 0);font-size: 40px; font-weight: bold; margin-top: 5%; margin-bottom: 5%;">Crypto
+        Currency Available</h1>
+      <div class="container" data-aos="fade-up">
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card1">
+              <img src="./images/bitcoin-img.jpeg" class="card-img-top" alt="Image 1">
+              <div class="card1-body">
+                <h5 class="card1-title">BitCoin(BTC)</h5>
+                <p class="card1-text">
+                  Decentralized digital currency enabling direct transactions, facing volatility and regulation</p>
+                <div class="btn1">
+                  <button class="btn-card"><a href="https://bitcoin.org/en/" class="link" target="_blank"> Learn More
+                    </a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card1">
+              <img src="./images/bitcoincash.jpeg" class="card-img-top" alt="Image 2">
+              <div class="card1-body">
+                <h5 class="card1-title">BitCoinCash(BCH)</h5>
+                <p class="card1-text">Bitcoin Cash decentralized cryptocurrency that emerged as a result of a
+                  Bitcoin fork.</p>
+                <div class="btn2">
+                  <button class="btn-card"><a href="https://bitcoincash.org/" target="_blank" class="link"> Learn More
+                    </a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card1">
+              <img src="./images//Card1ano(ADA).jpg" class="card-img-top" alt="Image 3">
+              <div class="card1-body">
+                <h5 class="card1-title">Cardano(ADA)</h5>
+                <p class="card1-text">
+                  Cardano (ADA) is a secure and scalable blockchain platform and cryptocurrency.</p>
+                <div class="btn3">
+                  <button class="btn-card"><a href="https://cardano.org/" target="_blank" class="link"> Learn More
+                    </a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card1">
+              <img src="./images//LiteCoin(LTC).jpeg" class="card-img-top" alt="Image 4">
+              <div class="card1-body">
+                <h5 class="card1-title">LiteCoin(LTC)</h5>
+                <p class="card1-text">
+                  Litecoin (LTC) is a fast and low-fee cryptocurrency. </p>
+                <div class="btn4">
+                  <button class="btn-card"><a href="https://trustwallet.com/litecoin-wallet/" target="_blank"
+                      class="link"> Learn More </a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container" data-aos="fade-up" style="margin-top: 10%;">
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card1">
+              <img src="./images//ChainLink(LINK).jpeg" class="card-img-top" alt="Image 1">
+              <div class="card1-body">
+                <h5 class="card1-title">ChainLink(LINK)</h5>
+                <p class="card1-text">
+                  ChainLink is a decentralized oracle network connecting smart contracts.</p>
+                <div class="btn5">
+                  <button class="btn-card"><a href="https://chain.link/" target="_blank" class="link"> Learn More
+                    </a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card1">
+              <img src="./images/DogeCoin(DOGE).jpeg" class="card-img-top" alt="Image 2">
+              <div class="card1-body">
+                <h5 class="card1-title">DogeCoin(DOGE)</h5>
+                <p class="card1-text">
+                  DogeCoin (DOGE) is a popular meme-inspired cryptocurrency.</p>
+                <div class="btn6">
+                  <button class="btn-card"><a href="https://dogecoin.com/" target="_blank" class="link"> Learn More
+                    </a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card1">
+              <img src="./images//Ethereum Classic(ETC).jpeg" class="card-img-top" alt="Image 3">
+              <div class="card1-body">
+                <h5 class="card1-title">Ethereum Classic(ETC)</h5>
+                <p class="card1-text">Ethereum Classic (ETC) <br> is a decentralized cryptocurrenc</p>
+                <div class="btn7">
+                  <button class="btn-card"><a href="https://ethereumclassic.org/" target="_blank" class="link"> Learn
+                      More </a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card1">
+              <img src="./images/ethurm.avif" class="card-img-top" alt="Image 4">
+              <div class="card1-body">
+                <h5 class="card1-title">Ethereum(ETH)</h5>
+                <p class="card1-text">
+                  Ethereum (ETH) is a decentralized blockchain platform.</p>
+                <div class="btn8">
+                  <button class="btn-card"><a href="https://ethereum.org/en/" target="_blank" class="link"> Learn More
+                    </a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" data-aos="fade-up" style="margin-top: 10%;">
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card1">
+              <img src="./images//Polkadot(DOT).jpeg" class="card-img-top" alt="Image 1">
+              <div class="card1-body">
+                <h5 class="card1-title">Polkadot(DOT)</h5>
+                <p class="card1-text">Polkadot (DOT) enables blockchain interoperability.</p> <br>
+                <div class="btn9">
+                  <button class="btn-card"><a
+                      href="https://polkadot.network/ecosystem/events/decoded-2023/?utm_source=gads&utm_medium=cpc&utm_campaign=decoded23&utm_content=txt&utm_term=brand%20global%20polkadot&gclid=CjwKCAjw-b-kBhB-EiwA4fvKrMqJ54ngJdj0JbwYI9VadYVZUd1Wrf6zPK42f7ZhBd1HB5xTuac6IxoCoGIQAvD_BwE"
+                      target="_blank" class="link"> Learn More </a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card1">
+              <img src="./images/Ripple(XRP).jpg" class="card-img-top" alt="Image 2">
+              <div class="card1-body">
+                <h5 class="card1-title">Ripple(XRP)</h5>
+                <p class="card1-text">
+                  Ripple (XRP) is a digital payment and remittance protocol.</p>
+                <div class="btn10">
+                  <button class="btn-card"><a href="https://cointelegraph.com/xrp-price-index" target="_blank"
+                      class="link"> Learn More </a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card1">
+              <img src="./images//Shiba(SHIB).avif" class="card-img-top" alt="Image 3">
+              <div class="card1-body">
+                <h5 class="card1-title">Shiba(SHIB)</h5>
+                <p class="card1-text">
+                  Shiba Inu (SHIB) is a community-driven decentralized cryptocurrency.</p>
+                <div class="btn11">
+                  <button class="btn-card"><a href="https://www.shibatoken.com/" target="_blank" class="link"> Learn
+                      More </a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card1">
+              <img src="./images/Tether(USDT.jpg" class="card-img-top" alt="Image 4">
+              <div class="card1-body">
+                <h5 class="card1-title">Tether(USDT)</h5>
+                <p class="card1-text">Tether (USDT) is a stablecoin pegged to the value of the US dollar.</p>
+                <div class="btn12">
+                  <button class="btn-card"><a href="https://tether.to/" target="_blank" class="link"> Learn More
+                    </a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" data-aos="fade-up" style="margin-top: 10%;">
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card1">
+              <img src="./images//Zcash(ZEC).jpeg" class="card-img-top" alt="Image 1">
+              <div class="card1-body">
+                <h5 class="card1-title">Zcash(ZEC)</h5>
+                <p class="card1-text">
+                  Zcash privacy-focused cryptocurrency offers optional transaction anonymity.</p>
+                <div class="btn13">
+                  <button class="btn-card"><a href="https://z.cash/" target="_blank" class="link"> Learn More
+                    </a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card1">
+              <img src="./images/Tron(TRX).avif" class="card-img-top" alt="Image 2">
+              <div class="card1-body">
+                <h5 class="card1-title">Tron(TRX)</h5>
+                <p class="card1-text">
+                  Tron is blockchain platform for decentralized applications and content sharing.</p>
+                <div class="btn14">
+                  <button class="btn-card"><a href="https://tron.network/" target="_blank" class="link"> Learn More
+                    </a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+  </section>
+
+
+  <!-- pricing -->
+  <section id="pricing" data-aos="fade-up"
+    style="margin-top: 10%; background-image: linear-gradient(to bottom , #1a6dfd ,#31b0f0); margin-bottom: 5%;">
+
+    <!-- <hr> -->
+    <div class="container" data-aos="fade-up">
+      <center>
+
+        <h1 style="color:rgb(255, 255, 255);font-size: 40px; font-weight: bold; margin-top: 5%; padding-top: 5%;">
+          Pricing</h1>
+        <p style="color: aliceblue; font-weight: bolder;">Has a variety of features that make it the best place to start
+          trading</p>
+
+        <div class="card2" data-aos="fade-up"
+          style="width: 70%;border-radius: 10px; background-image: linear-gradient(to bottom , #1a6dfd ,#31b0f0); margin-bottom: 5%; ">
+          <h1 style="color:rgb(255, 255, 255);font-size: 40px; font-weight: bold; margin-top: 5%; padding-top: 5%;">
+            Pricing and Profits</h1>
+          <p style="color: rgb(0, 0, 0); font-weight: bolder;" data-aos="fade-up">Price for 1 miner</p>
+          <h3 data-aos="fade-up" style="color:rgb(255, 255, 255);">
+            0.01 USD</h3>
+
+          <div class="container-left-right" data-aos="fade-up">
+            <div class="left-div" data-aos="fade-up">
+              <p data-aos="fade-up">Per Day:</p>
+              <p data-aos="fade-up">2 %:</p>
+              <hr class="custom-hr">
+              <p data-aos="fade-up">2.3 %:</p>
+              <hr class="custom-hr">
+              <p data-aos="fade-up">2.8 %:</p>
+              <hr class="custom-hr">
+              <p data-aos="fade-up">3.3 %:</p>
+              <hr class="custom-hr">
+              <p data-aos="fade-up">3.5 %:</p>
+              <hr class="custom-hr">
+              <p data-aos="fade-up">4 %:</p>
+              <hr class="custom-hr">
+              <p data-aos="fade-up">4.5 %:</p>
+              <hr class="custom-hr">
+              <p data-aos="fade-up">5 %:</p>
+              <hr class="custom-hr">
+              <p>5.5 %:</p>
+              <hr class="custom-hr">
+              <p data-aos="fade-up">6 %:</p>
+              <hr class="custom-hr">
+            </div>
+
+            <div class="right-div">
+              <p data-aos="fade-up">Hashrate</p>
+              <p data-aos="fade-up">2 000 Miners</p>
+              <hr class="custom-hr1">
+              <p data-aos="fade-up">2 300 Miners</p>
+              <hr class="custom-hr1">
+              <p data-aos="fade-up">2 800 Miners</p>
+              <hr class="custom-hr1">
+              <p data-aos="fade-up">3 300 Miners</p>
+              <hr class="custom-hr1">
+              <p data-aos="fade-up">3 500 Miners</p>
+              <hr class="custom-hr1">
+              <p data-aos="fade-up">4 000 Miners</p>
+              <hr class="custom-hr1">
+              <p data-aos="fade-up">4 500 Miners</p>
+              <hr class="custom-hr1">
+              <p data-aos="fade-up">5 000 Miners</p>
+              <hr class="custom-hr1">
+              <p data-aos="fade-up">5 500 Miners</p>
+              <hr class="custom-hr1">
+              <p data-aos="fade-up">6 000 Miners</p>
+              <hr class="custom-hr1">
+            </div>
+          </div>
+        </div>
+        <button onclick="document.getElementById('id02').style.display='block'" class="btn-starting">
+          <a href="E:\Minig-project\next.html"></a>
+          Get Started</button>
+
+        <div style=" padding: 3% 5%;">
+        </div>
+    </div>
+    </center>
+  </section>
+
+
+  <!-- Frequently Asked Questions -->
+  <section id="question" data-aos="fade-up">
+    <center>
+      <h1 style="color:rgb(0, 0, 0);font-size: 40px; font-weight: bold; margin-bottom: 3%;">
+        FREQUENTLY ASKED QUESTIPNS</h1>
+
+      <div class="container">
+        <div class="dropdown" data-aos="fade-up">
+          <button class="question">
+            How to become a partner of Bliyzer mining company?</button>
+          <div class="answer">To become our partner, you just need to go through a simple registration and get free 5$!
+          </div>
+        </div>
+
+        <div class="dropdown" data-aos="fade-up">
+          <button class="question">
+            What to do immediately after registration?</button>
+          <div class="answer">You need to log into your account, then go to the mining page and activate your mining.
+            Mining will be active and will bring you profit.To increase your daily income, make a deposit.</div>
+        </div>
+
+        <div class="dropdown" data-aos="fade-up">
+          <button class="question">
+            What is a level and how can i increase it?</button>
+          <div class="answer">Bliyzer marketing is designed using levels. The more power a user buys, the higher his
+            level is. The profitability depends directly on the level obtained. If initially the user receives 2% per
+            day, then with the increase in the available power for mining the profitability can grow up to 6% per day.
+          </div>
+        </div>
+
+        <div class="dropdown" data-aos="fade-up">
+          <button class="question">
+            How to find out what profit I will receive and what is my level?</button>
+          <div class="answer">To find out your daily profit you can use the calculator on the main page.
+            1 Level 2 % = 500 Miners
+            2 Level 2.3 % = 1 000 Miners
+            3 Level 2.8 % = 3 000 Miners
+            4 Level 3.3 % = 7 000 Miners
+            5 Level 3.5 % = 15 000 Miners
+            6 Level 4 % = 30 000 Miners
+            7 Level 4.5 % = 70 000 Miners
+            8 Level 5 % = 150 000 Miners
+            9 Level 5.5 % = 300 000 Miners
+            10 Level 6 % = 505 000 Miners</div>
+        </div>
+
+        <div class="dropdown" data-aos="fade-up">
+          <button class="question">
+            What payment systems are available on the project?</button>
+          <div class="answer">You can use such payment systems as: BITCOIN, ETHEREUM, BINANCE COIN, LITECOIN, DOGECOIN,
+            DASH, BITCOINCASH, ZCASH, RIPPLE, STELLAR, TRON, TETHER(TRC-20), TETHER(BEP-20)
+          </div>
+        </div>
+
+        <div class="dropdown" data-aos="fade-up">
+          <button class="question">
+            How do I make a deposit? How do I top up my balance?</button>
+          <div class="answer">To make a deposit, you need to log into your account, then go to the mining page and at
+            the
+            top you will see the "Deposit" button. After going to the deposit page, select the currency of which you
+            will
+            make a deposit. After that, you will be given a wallet address to which you need send cryptocurrency. The
+            deposit will be credited within 1 hour.</div>
+        </div>
+
+        <div class="dropdown" data-aos="fade-up">
+          <button class="question">
+            What is the minimum deposit amount?</button>
+          <div class="answer">You can deposit with any amount of cryptocurrency. There are no restrictions. But do not
+            forget about the commission of your crypto wallets for sending.
+          </div>
+        </div>
+
+        <div class="dropdown" data-aos="fade-up">
+          <button class="question">
+            Is there an affiliate program on the project? If so, where can I find my referral link. How can I find
+            information about my referrals?</button>
+          <div class="answer">The project has a two-level affiliate program, your referral link, all information about
+            the
+            referral program, as well as promotional materials you can find in the "Referral program" section.</div>
+        </div>
+
+        <div class="dropdown" data-aos="fade-up">
+          <button class="question">
+            I made a deposit, but I did not receive mining power. What should I do</button>
+          <div class="answer">Power will be credited automatically to your balance immediately after your deposit is
+            credited to the platform wallet.
+          </div>
+        </div>
+
+        <div class="dropdown" data-aos="fade-up">
+          <button class="question">
+            I can't activate mining?</button>
+          <div class="answer">To activate mining, go to the "mining" page. Select the currency you want to earn and drag
+            the slider to the right. It is possible to mine several currencies at the same time.</div>
+        </div>
+
+
+        <div class="dropdown" data-aos="fade-up">
+          <button class="question">
+            I want to make a withdrawal, how do I do it?
+          </button>
+          <div class="answer">Log in to your account. Go to the "withdraw" page. Click on the "Withdrawal" button.
+            Select the currency you want to withdraw, specify the withdrawal amount and enter your wallet address.
+          </div>
+        </div>
+
+        <div class="dropdown" data-aos="fade-up">
+          <button class="question">
+            I made a withdrawal request, but it has not yet arrived in my wallet?</button>
+          <div class="answer">All requests are processed by a group of operators in manual mode. The request is
+            usually processed within 5-30 minutes. In some cases, a withdrawal request can be processed within 48
+            hours.</div>
+        </div>
+
+        <div class="dropdown" data-aos="fade-up">
+          <button class="question">
+            Does the acquired power make a profit when I close the site?</button>
+          <div class="answer">The cryptocurrency mining power is located on a mining farm, therefore, your equipment
+            cannot affect cryptocurrency mining in any way. You can close the site and turn off your device. If your
+            power is set to mine any currency in your personal account, you will make a profit according to the
+            marketing.
+          </div>
+        </div>
+
+        <div class="dropdown" data-aos="fade-up">
+          <button class="question">
+            What if I forgot my account password?</button>
+          <div class="answer">Use the "Forgot Password" feature on the "Login" tab. Enter the e-mail address you used
+            to register your account. A new password will be sent to your e-mail. After that, check your spam folder
+            in your e-mail.</div>
+        </div>
+
+
+        <div class="dropdown" data-aos="fade-up">
+          <button class="question">
+            Can i create multiple accounts?</button>
+          <div class="answer">The user is allowed to have only one account. If this rule is violated, the
+            administration has the right to block the user without explanation.
+          </div>
+        </div>
+
+        <div class="dropdown" data-aos="fade-up">
+          <button class="question">
+            Your account can be blocked in the following situations!</button>
+          <div class="answer">Bliyzer takes a responsible approach to protecting the personal data of its users, as
+            well as the security of its site. Any attempts to collect users' personal information, hacking of the site
+            code, unfair use of the affiliate program, gaining access to user accounts through hacking, using
+            third-party services to artificially increase the number of partners, as well as any insults to the
+            administration of the site or its users may become a reason for suspension of the user account.</div>
+        </div>
+
+        <div class="dropdown" data-aos="fade-up">
+          <button class="question">
+            I didn't find the answer to my question, what should I do?</button>
+          <div class="answer">Contact the support service, it can be a mailbox or a telegram message.</div>
+        </div>
+      </div>
+
+    </center>
+  </section>
+
+
+  <!-- footer -->
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">
+            Introducing our mining website, where we offer a comprehensive platform for all your mining needs. Explore a
+            wide range of resources, tools, and expert advice to enhance your mining operations. Stay up-to-date with
+            the latest industry trends and make informed decisions to maximize your productivity and profitability. Join
+            us today and unlock the full potential of mining.
+        </div>
+
+        <!-- <div class="col-xs-6 col-md-3">
+          <h6>Skills</h6>
+          <ul class="footer-links">
+            <li><a href="">Front End Developer</a></li>
+            <li><a href="">UI Design</a></li>
+            <li><a href="">PHP</a></li>
+            <li><a href="">JavaScript</a></li>
+            <li><a href="">Next.js</a></li>
+          </ul>
+        </div> -->
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#work">How it's work</a></li>
+            <li><a href="#slider">Available</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#question">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Design &copy; by
+            <a href="#">Faizan Mati</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="linkedin" href="mailto:faizanmatee@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
+            </li>
+            <li><a class="facebook" href="https://www.instagram.com/faizan_mati/"><ion-icon
+                  name="logo-instagram"></ion-icon></a></li>
+            <li><a class="twitter" href="https://www.linkedin.com/in/faizan-mati/"><ion-icon
+                  name="logo-linkedin"></ion-icon></a></li>
+            <li><a class="dribbble" href="https://www.facebook.com/profile.php?id=100079673637881"><ion-icon
+                  name="logo-facebook"></ion-icon></a></li>
+            <li><a class="linkedin" href="https://github.com/faizan-mati"><ion-icon name="logo-github"></ion-icon></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="./script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+</body>
+
+</html>
